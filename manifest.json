@@ -1,0 +1,27 @@
+{
+    "manifest_version": 2,
+    "name": "Sum it up",
+    "description": "This extension taps into a local LLM to summarize long emails.",
+    "version": "0.1",
+    "author": "Vratislav Hutsky",
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "thunderbird@hutsky.net",
+            "strict_min_version": "128.0"
+        }
+    },
+    "message_display_action": {
+        "default_popup": "messagePopup/popup.html",
+        "default_title": "Sum it up",
+        "default_icon": "images/internet-32px.png"
+    },
+    "permissions": [
+        "messagesRead",
+        "activeTab"
+    ],
+    "icons": {
+        "64": "images/internet.png",
+        "32": "images/internet-32px.png",
+        "16": "images/internet-16px.png"
+    }
+}
