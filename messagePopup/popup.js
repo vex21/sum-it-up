@@ -27,6 +27,18 @@ function format_prompt(question) {
 }
 
 async function tokenize(content) {
+
+    fetch(`${API_URL}/`, {mode: 'no-cors'})
+        .then(response => {
+            console.log('response.status: ', response.status);
+            console.log(response);
+        })
+        .catch(err => {
+            document.getElementById("summary").textContent = 'API not available';
+            console.log(err);
+            return []
+        });
+
     const result = await fetch(`${API_URL}/tokenize`, {
         method: 'POST',
         body: JSON.stringify({ content })
