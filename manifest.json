@@ -2,7 +2,7 @@
     "manifest_version": 2,
     "name": "Sum it up",
     "description": "This extension taps into a local LLM to summarize long emails.",
-    "version": "0.1",
+    "version": "0.2",
     "author": "Vratislav Hutsky",
     "browser_specific_settings": {
         "gecko": {
